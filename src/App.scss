@@ -1,0 +1,20 @@
+.App{
+  width: 100%;
+  // min-height: 100vh;
+
+  .ant-layout-header{
+    background:blueviolet;
+    text-align: center;
+  }
+
+  .main-content{
+    min-height: calc(100vh - 64px);
+    padding:20px;
+    
+  }
+
+  .ant-layout-footer{
+    border-top: 1px solid #000;
+    text-align: center;
+  }
+}
