@@ -25,7 +25,9 @@ const MForm:FC=()=> {
 
     return (
         <Row className="wizard-pannel">
-             <Col span={12}><FormContent handleChange={handleChange} data={data} /></Col>
+             <Col span={12}>
+                 <FormContent handleChange={handleChange} data={data} />
+             </Col>
              <Col span={12}>
                 <ol>
                   <li>--name : {data.name} /</li>

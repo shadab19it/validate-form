@@ -14,19 +14,44 @@ const FormContent:FC<FormContent>=(props)=> {
     return (
      <div className="form-content">
          <Form.Item label="Application app">
-             <Input type="text" placeholder="Awesome Name"  onChange={handleChange('name')} value={data.name} />
+             <Input 
+              type="text" 
+              placeholder="Awesome Name"  
+              onChange={handleChange('name')} 
+              value={data.name} 
+             />
          </Form.Item>
          <Form.Item label="class Name">
-             <Input type="text" placeholder="com.company.project.Driver" onChange={handleChange('driverMemory')} value={data.driverMemory} />
+             <Input 
+              type="text" 
+              placeholder="com.company.project.Driver" 
+              onChange={handleChange('driverMemory')} 
+              value={data.driverMemory} 
+             />
          </Form.Item>
          <Form.Item label="Application jar path">
-             <Input type="text" placeholder="/path/to/spark/awesome-app.jar" onChange={handleChange('executorMemory')} value={data.executorMemory} />
+             <Input 
+              type="text" 
+              placeholder="/path/to/spark/awesome-app.jar" 
+              onChange={handleChange('executorMemory')} 
+              value={data.executorMemory} 
+             />
          </Form.Item>
          <Form.Item label="Application jar path">
-             <Input type="text" placeholder="executorCores" onChange={handleChange('executorCores')} value={data.executorCores} />
+             <Input 
+              type="text" 
+              placeholder="executorCores" 
+              onChange={handleChange('executorCores')} 
+              value={data.executorCores} 
+             />
          </Form.Item>
          <Form.Item label="Application Parameters (Optional)">
-             <TextArea placeholder="--param1 <value1> --params2<value2>" rows={1} onChange={handleChange('NumExecutor')} value={data.NumExecutor} />
+             <TextArea 
+              placeholder="--param1 <value1> --params2<value2>" 
+              rows={1} 
+              onChange={handleChange('NumExecutor')} 
+              value={data.NumExecutor} 
+             />
          </Form.Item>
      </div>
     )
