@@ -31,11 +31,11 @@ const MForm:FC=()=> {
              <Col span={12}>
               <div className="output">
                 <ol>
-                  <li>--name : {data.name} /</li>
-                  <li>--driverMemory : {data.driverMemory} /</li>
-                  <li>--executorMemory : {data.executorMemory} /</li>
-                  <li>--executorCores : {data.executorCores} /</li>
-                  <li>--NumExecutor : {data.NumExecutor} /</li>
+                  <li><span className="outflname">--name</span> : {data.name} /</li>
+                  <li><span className="outflname">--driverMemory </span>: {data.driverMemory} /</li>
+                  <li><span className="outflname">--executorMemory </span>: {data.executorMemory} /</li>
+                  <li><span className="outflname">--executorCores</span> : {data.executorCores} /</li>
+                  <li><span className="outflname">--NumExecutor</span> : {data.NumExecutor} /</li>
                 </ol>
               </div>
              </Col>
