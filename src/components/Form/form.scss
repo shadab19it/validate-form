@@ -7,6 +7,12 @@
         &:first-of-type{
           border-right: 1px solid black;
         }
+
+        .output{
+          height:calc(100vh - 104px);
+          color:white;
+          background-color:black;
+        }
     }
   
 }

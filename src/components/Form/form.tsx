@@ -29,6 +29,7 @@ const MForm:FC=()=> {
                  <FormContent handleChange={handleChange} data={data} />
              </Col>
              <Col span={12}>
+              <div className="output">
                 <ol>
                   <li>--name : {data.name} /</li>
                   <li>--driverMemory : {data.driverMemory} /</li>
@@ -36,6 +37,7 @@ const MForm:FC=()=> {
                   <li>--executorCores : {data.executorCores} /</li>
                   <li>--NumExecutor : {data.NumExecutor} /</li>
                 </ol>
+              </div>
              </Col>
         </Row>
     );
