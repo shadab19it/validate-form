@@ -38,8 +38,7 @@ const MForm:FC=()=> {
                 </ol>
              </Col>
         </Row>
-
-    )
+    );
 }
 
 export default MForm;
