@@ -1,7 +1,7 @@
 import React,{useState,FC,createContext} from 'react';
 import {IContext,IData} from './interface/interface';
 
-const MyContext = createContext<any>(null);
+const MyContext = createContext({} as IContext);
 
 export const Provider:FC = (props)=>{
     const [data,setData] = useState<IData>(

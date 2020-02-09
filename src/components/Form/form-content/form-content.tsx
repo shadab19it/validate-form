@@ -1,8 +1,7 @@
-import React,{useState,FC} from 'react';
+import React,{FC} from 'react';
 import  './form-content.scss';
-import {IData} from '../../../interface/interface';
 import {Consumer} from '../../../context';
-import {Form , Icon, Input, Button} from 'antd';
+import {Form , Input} from 'antd';
 const {TextArea} = Input
 
 const FormContent:FC=()=> {
@@ -23,7 +22,7 @@ const FormContent:FC=()=> {
               type="text" 
               placeholder="com.company.project.Driver" 
               onChange={value.handleChange('driverMemory')} 
-              value={value.driverMemory} 
+              value={value.data.driverMemory} 
              />
          </Form.Item>
          <Form.Item label="Application jar path">
@@ -31,7 +30,7 @@ const FormContent:FC=()=> {
               type="text" 
               placeholder="/path/to/spark/awesome-app.jar" 
               onChange={value.handleChange('executorMemory')} 
-              value={value.executorMemory} 
+              value={value.data.executorMemory} 
              />
          </Form.Item>
          <Form.Item label="Application jar path">

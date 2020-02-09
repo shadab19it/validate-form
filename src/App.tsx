@@ -1,10 +1,10 @@
-import React,{FC,useState} from 'react';
+import React,{FC} from 'react';
 import {Provider} from './context';
 import FormContainer from './components/Form/form';
 import {Layout} from 'antd';
 import './App.scss';
 
-const {Header,Content,Footer,Sider} = Layout; 
+const {Header,Content} = Layout; 
 
 const App:FC = (props) => {
   return (
