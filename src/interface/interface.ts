@@ -7,7 +7,6 @@
 }
 
 export interface IContext{
-    data:IData
-    handleChange:(input:string) => 
-    (e:React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement >)=>void
+    data:IData,
+    handleChange:(input:string) => (e:React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement >)=>void;
 }

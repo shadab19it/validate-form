@@ -8,7 +8,7 @@ const {TextArea} = Input
 const FormContent:FC=()=> {
     return (
     <Consumer> 
-      {value=>(
+    {value=>(
      <div className="form-content">
          <Form.Item label="Application app">
              <Input 

@@ -1,7 +1,7 @@
 import React,{useState,FC,createContext} from 'react';
 import {IContext,IData} from './interface/interface';
 
-const MyContext = React.createContext<Partial<any>>({});
+const MyContext = createContext<any>(null);
 
 export const Provider:FC = (props)=>{
     const [data,setData] = useState<IData>(
@@ -19,6 +19,7 @@ export const Provider:FC = (props)=>{
     const newData= {...data,[input]:e.target.value};
     setData(newData);
     }
+
     const contextValue = {
         data:data,
         handleChange:handleChange
@@ -30,6 +31,7 @@ export const Provider:FC = (props)=>{
         </MyContext.Provider>
     )
 }
+
 export const Consumer = MyContext.Consumer;
 
 
