@@ -1,4 +1,5 @@
-import React,{FC} from 'react';
+import React,{FC,useState} from 'react';
+import {Provider} from './context';
 import FormContainer from './components/Form/form';
 import {Layout} from 'antd';
 import './App.scss';
@@ -7,6 +8,7 @@ const {Header,Content,Footer,Sider} = Layout;
 
 const App:FC = (props) => {
   return (
+  <Provider>
     <div>
       <Layout className="App">
         <Header>header</Header>
@@ -17,6 +19,7 @@ const App:FC = (props) => {
         </Layout>
       </Layout>   
     </div>
+  </Provider> 
   );
 }
 
