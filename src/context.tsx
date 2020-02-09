@@ -13,16 +13,26 @@ export const Provider:FC = (props)=>{
          NumExecutor:""
         }
     );
-    
+ 
     const handleChange = (input:string) => 
     (e:React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement >)=>{
     const newData= {...data,[input]:e.target.value};
     setData(newData);
     }
 
+const output = `spark-submit \\
+--class ${data.name} \\
+--driver-memoroy ${data.driverMemory} g\\
+--executor-memory ${data.executorMemory} g\\
+--executor-cores ${data.executorCores} \\
+--num-executors ${data.NumExecutor} \\
+
+`;
+
     const contextValue = {
         data,
-        handleChange
+        handleChange,
+        output,
     }
 
     return(

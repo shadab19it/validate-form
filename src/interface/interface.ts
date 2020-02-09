@@ -8,5 +8,6 @@
 
 export interface IContext{
     data:IData,
+    output:string,
     handleChange:(input:string) => (e:React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement >)=>void;
 }

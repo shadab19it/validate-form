@@ -2,15 +2,16 @@
 .wizard-pannel{
     & > div{
         min-height: calc(100vh - 104px);
-        background-color: none;
+        // background-color: none;
         
         &:first-of-type{
           border-right: 1px solid black;
         }
 
-
-        .Codemirror{
-          text-align: center;
+        .CodeMirror{
+          min-height: calc(100vh - 104px) !important;
+          height: calc(100vh - 104px) !important;
+          text-align: left;
         }
 
     }
