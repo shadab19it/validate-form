@@ -21,8 +21,8 @@ export const Provider:FC = (props)=>{
     }
 
     const contextValue = {
-        data:data,
-        handleChange:handleChange
+        data,
+        handleChange
     }
 
     return(
